@@ -37,17 +37,14 @@ Example Return 2
 False
 """
 def is_leap_year(year):
+    if year % 400 == 0:
+        return True
+    if year % 100 == 0:
+        return False
     if year % 4 == 0:
-        return 1
-        if year % 100 != 0:
-            return 1
-            if year % 400 == 0:
-                return 1
-            else:
-                return 2
-        else:
-            return 2       
-    else:
-        return 2
+        return True
+    return False
     
 print(is_leap_year(2020))
+print(is_leap_year(1700))
+print(is_leap_year(2100))
