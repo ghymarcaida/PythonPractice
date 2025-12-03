@@ -9,6 +9,7 @@ colors = ["red", "green", "blue", "yellow", "cyan", "magenta", "black", "orange"
 
 ghy = t()
 ghy.pensize(10)
+ghy.speed(10)
 
 def choose_color():
     random_color = r.choice(colors)
@@ -24,7 +25,7 @@ def move_right():
 
 def move():
     direction_choice = [move_left, move_right]
-    for i in range (1, 100):
+    for i in range (1001):
         chosen_direction = r.choice(direction_choice)
         chosen_direction()
         choose_color()
