@@ -7,11 +7,11 @@ import random as r
 
 colors = ["red", "green", "blue", "yellow", "cyan", "magenta", "black", "orange", "pink", "royalblue"]
 directions = [0, 90, 180, 270]
-distance = [20, 40, 60]
+distance = [20, 30, 40, 50, 60, 70]
 
 ghy = t()
 ghy.shape("turtle")
-ghy.pensize(10)
+ghy.pensize(15)
 
 def choose_color():
     new_color = r.choice(colors)
